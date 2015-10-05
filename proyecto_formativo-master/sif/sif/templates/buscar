@@ -1,0 +1,20 @@
+GITHUB.COM/MONITA1234/BLOOKSI
+
+LIBROS
+
+LOGIN
+USUARIOS (VISTA REGISTRO, EDICION,)
+PLANTILLAS (STAFF SUPERUSER)
+
+
+
+<ul id="nav-mobile" class="side-nav fixed indigo darken-1" style="width: 240px">
+					
+					<li><a href="{%  url 'vista_index' %}">Inicio</a></li>
+					<li><a href="{% url 'vista_sede' %}">Sedes</a></li>
+					<li><a href="{% url 'vista_operarios' %}">Usuarios</a></li>
+					<li><a href="{% url 'vista_salida' %}"> Salidas </a></li>
+					<li><a href="{% url 'vista_proveedor' %}"> Proveedores </a></li>
+					<li><a href="{% url 'vista_productos' %}"> Productos </a></li>
+					<li><a href="{% url 'vista_entrada' %}"> Entradas </a></li>		
+			</ul>	

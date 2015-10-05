@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+	producto
+{% endblock %}
+
+{% block content %}
+	<div class="row center" >
+        <div class="col s12 m7">
+          <div class="card Large">
+            <div class="card-image">
+              <img src="/media/{{producto.imagen}}" height="250px">
+              <span class="card-title red">{{producto.nombre}}</span>
+            </div>
+            <div class="card-content">
+            	<p><b>Ancho:</b> {{ producto.ancho }} </p>
+              <p><b>Largo:</b> {{ producto.largo }}</p>
+            	<p><b>Referencia:</b> {{ producto.proveedor }} </p>
+            	<br>
+            	<p><a href="/codigoBarras/cod/{{ producto.codigobarras }}" target="_blank"><img src="/media/codes/{{ producto.codigobarras }}.svg"></a></p><br>
+              {% if producto.descripcion == ""%}
+                <p><b>Descripcion </b>Sin descripcion</p>
+              {% else %}
+                <p><b>Observacion:</b> {{ producto.descripcion }} </p>
+              {% endif %}
+            	
+				      <p><b>Precio:</b> {{ producto.valor }}</p>
+				      <p> <b>Cantidad disponible:</b> {{ producto.cantidad }}</p>
+            </div>
+            <div class="card-action">
+              <a  href="/producto/">Lista de productos</a>
+            </div>
+          </div>
+        </div>
+    </div>
+	
+	
+{% endblock %}	
