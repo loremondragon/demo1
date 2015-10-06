@@ -133,7 +133,6 @@ INSTALLED_APPS = (
     'sif.apps.web_services.ws_producto',
     'rest_framework',
     'gunicorn',    
-    
 
 )
 
